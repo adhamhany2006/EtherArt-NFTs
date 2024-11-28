@@ -1,0 +1,694 @@
+/**Start Google Fonts**/
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap');
+/**End Google Fonts**/
+*{
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box
+}
+#elments{
+  color: orangered;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+  font-size: 35px
+}
+h3{
+  padding: 50px;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 800;
+  font-size: 50px;
+  color: #D400FF54;;
+  text-transform: uppercase
+}
+body{
+  background: black;
+  height: 100vh;
+}
+.container{
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.logo{
+  width: 100px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 27px;
+  color: #febd25;
+} 
+.container ul li{
+  display: inline-block;
+  margin: 15px;
+}
+.container ul li a{
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: snow;
+  transition: 0.6s;
+}
+.container ul li a::before{
+  content: " ";
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  top: 60px;
+  margin-top: 50px;
+  background: snow;
+  transition: 0.6s;
+  border-radius: 20px;
+  opacity: 0;
+}
+.container ul li a:hover::before{
+  opacity: 1;
+  transition: 0.6s;
+}
+.container ul li a:hover{
+  font-family: serif;
+  color: goldenrod;
+}
+/****Start Sections***/
+
+.contant{
+  background-image: url(img/contant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
+}
+.text-contant span{
+  margin: 15px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 25px;
+  color: snow;
+  letter-spacing: 2px;
+}
+.text-contant h1{
+  margin: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+  color: snow;
+}
+.text-contant p{
+  width: 450px;
+  margin: 15px;
+  margin-bottom: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: snow;
+}
+.btn2{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 7px;
+  font-size: 25px;
+  background: linear-gradient(45deg, navy,purple);
+  color: snow;
+  border: none;
+  transition: 0.6s;
+  border-radius: 25px
+}
+.btn2:hover{
+  transition: 0.6s;
+  background: transparent;
+  border: solid 3px snow;
+  color: snow;
+  filter: drop-shadow(0 0 20px snow)
+}
+.btn3{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 7px;
+  font-size: 25px;
+  background: transparent;
+  color: snow;
+  border: solid 3px snow;
+  transition: 0.6s;
+  border-radius: 25px
+}
+.btn3:hover{
+  transition: 0.6s;
+  background: linear-gradient(45deg, navy,purple);
+  border: none;
+  color: snow;
+  filter: drop-shadow(0 0 20px snow)
+}
+.cont{
+  width: 400px;
+  filter: drop-shadow(0 0 25px snow);
+  animation: cont 2s infinite alternate linear;
+}
+/**Start Services**/
+
+.services{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+  gap: 30px
+}
+.text-srv{
+  margin: 15px;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+}
+.textp-srv{
+  margin: auto;
+  width: 200px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 17px;
+  color: snow;
+}
+.srv{
+  width: 40px;
+}
+
+/**End Services**/
+/****End Sections***/
+
+/**Start About**/
+
+.about{
+  background: linear-gradient(purple,navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
+}
+.img-about{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  text-align: center;
+  gap: 30px
+}
+.text-abt{
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+ font-weight: 800;
+}
+.text-about span{
+  margin: 15px;
+  font-family: monospace;
+  font-size: 25px;
+  color: snow;
+  font-weight: bold;
+}
+.text-about h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: snow;
+  text-shadow: 0 0 10px navy,
+               0 0 20px navy,
+               0 0 30px navy,
+               0 0 40px navy;
+  margin: 15px;
+}
+.text-about p{
+  width: 300px;
+  margin: 15px;
+  margin-bottom: 25px;
+  margin-bottom: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: 1px;;
+  color: snow;
+}
+.btn-abt{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 7px;
+  font-size: 25px;
+  background: linear-gradient(-45deg, navy,purple);
+  color: snow;
+  border: none;
+  transition: 0.6s;
+  border-radius: 25px
+}
+.btn-abt:hover{
+  transition: 0.6s;
+  background: transparent;
+  border: solid 3px snow;
+  color: snow;
+  filter: drop-shadow(0 0 20px snow)
+}
+.abt{
+  margin: 15px;
+  background: snow;
+  width: 200px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+.abt:hover{
+  transition: 0.6s;
+  transform: rotate(360deg);
+  border: solid 5px snow;
+  filter: drop-shadow(0 0 50px snow);
+  background: transparent;
+  
+}
+/**End About**/
+
+/**Start Sell And Buy NFT**/
+
+.buy-sell{
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-buy-sell span{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: snow;
+}
+.text-buy-sell h2{
+  margin: 15px;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+}
+.text-buy-sell p{
+  width: 450px;
+  margin: 15px;
+  margin-bottom: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: snow;
+}
+.btn-buy-sell{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 7px;
+  font-size: 25px;
+  background: linear-gradient(45deg, navy,purple);
+  color: snow;
+  border: none;
+  transition: 0.6s;
+  border-radius: 25px
+}
+.btn-buy-sell:hover{
+  transition: 0.6s;
+  background: transparent;
+  border: solid 3px snow;
+  color: snow;
+  filter: drop-shadow(0 0 20px snow)
+}
+.buy-sell-img{
+  width: 400px;
+}
+
+/**End Sell And Buy NFT**/
+
+/**Start Products**/
+
+.products{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+}
+.text-product{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+}
+.text-product h4{
+  color: snow;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.text-product p{
+  background: dodgerblue;
+  color: snow;
+  font-family: serif;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px
+}
+.img-product{
+  background: #333;
+  border-radius: 25px;
+  margin: 15px;
+  transition: 0.6s
+}
+.img-product:hover{
+  transition: 0.6s;
+  transform: translate(0,-15px);
+  background: #D400FF54;
+  color: black;
+  filter: drop-shadow(0 0 25px mediumpurple)
+}
+.text-pro{
+  color: snow;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+  font-family: "Poppins", sans-serif;
+  margin: 15px;
+  text-align: center;
+}
+.textp-pro{
+  width: 250px;
+  color: snow;
+  margin-bottom: 15px;
+  margin: auto;
+  text-align: center;
+}
+.pro{
+  width: 200px;
+  margin: 15px;
+  border-radius: 25px
+}
+
+/**End Products**/
+
+/**Start Community**/
+
+.communitys{
+  background-image: url(img/community.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25vh;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-community span{
+  margin: 15px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 25px;
+  color: snow;
+}
+.text-community h2{
+  margin: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  color: snow;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+  font-size: 50px;
+}
+.text-community p{
+  width: 450px;
+  margin: 15px;
+  margin-bottom: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: snow;
+}
+.btn-comm{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 7px;
+  font-size: 25px;
+  background: linear-gradient(45deg, navy,purple);
+  color: snow;
+  border: none;
+  transition: 0.6s;
+  border-radius: 25px
+}
+.btn-comm:hover{
+  transition: 0.6s;
+  background: transparent;
+  border: solid 3px snow;
+  color: snow;
+  filter: drop-shadow(0 0 20px snow)
+}
+/**End Community**/
+/**Staer Gallery**/
+
+.gallerys{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  text-align: center;
+  grid-gap: 20px;
+}
+.gal{
+  width: 200px;
+  border-radius: 25px;
+  box-shadow: 2px 3px 15px 5px purple;
+  transition: 0.6s;
+}
+.gal:hover{
+  transition: 0.6s;
+  transform: scale(1.1);
+  border-radius: 50%
+}
+/**End Gallery**/
+
+/**Starr Sellers**/
+
+.sellers{
+  background: linear-gradient(45deg, purple,navy);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center
+}
+.img-sellers{
+  margin: 15px;
+}
+.text-sellers p{
+  margin: 15px;
+  width: 250px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: snow;
+}
+.text-sellers h2{
+  margin: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  color: snow;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+}
+.sel{
+  width: 100px;
+  border-radius: 50%;
+  margin: 15px;
+}
+.str{
+  margin: 15px;
+  width: 80px;
+}
+
+/**End Sellers**/
+
+/**Start Statistics**/
+
+.statistics{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.text-statistics h2{
+  margin: 15px;
+  font-size: 35px;
+  font-weight: 800;
+  color: snow;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+  font-family: "Poppins", sans-serif;
+}
+.text-statistics p{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: purple;
+  text-transform: uppercase;
+  margin: 15px;
+}
+/**End Statistics**/
+
+/**Start aAnalysis**/
+
+.analysis{
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.text-analysis span{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 25px;
+  color: snow;
+}
+.text-analysis h2{
+  margin: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: snow;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+}
+.text-analysis p{
+  margin: 15px;
+  width: 450px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: snow;
+}
+.anal{
+  background: linear-gradient(45deg, purple,navy);
+  border-radius: 50%;
+  width: 450px;
+}
+/**End Analysis**/
+
+/**Start Blogs**/
+
+.blogs{
+  background: linear-gradient(45deg,purple,navy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.text-blog span{
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: snow;
+}
+.text-blog h2{
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 60px;
+  color: snow;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+}
+.blog-nav li{
+  display: inline-block;
+  margin: 15px;
+}
+.blog-nav li a{
+  color: snow;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s;
+}
+.blog-nav li a:hover{
+  color: purple;
+  border-bottom: solid 3px black;
+  border-radius: 0px;
+  transition: 0.6s;
+}
+.text-blog p{
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  width: 550px;
+  margin: auto;
+  color: snow;
+}
+.text-blog h4{
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: snow;
+}
+.icons{
+  padding: 10px;
+  margin: 10px;
+  transition: 0.6s;
+  width: 30px;
+} 
+marquee{
+  padding: 25px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+  color: snow;
+  text-shadow: 0 0 10px purple,
+               0 0 20px purple,
+               0 0 30px purple,
+               0 0 40px purple;
+}
+
+/**End Blogs**/
